@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: green;
+}
+#box3{
+    background-color: blue;
+}
+#box4{
+    background-color: yellow;
+}
+body{
+    background-color: 333338;
+    color: ccccff;
+}
+.margin{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
