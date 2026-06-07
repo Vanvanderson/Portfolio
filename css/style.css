@@ -1,30 +1,38 @@
 .container{
     display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu content"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
 }
-.box{
-    width: 150px;
-    height: 150px;
-    font-size: 8em;
+.container div.header{
+    grid-area: header;
     text-align: center;
-    border-radius: 15px;
 }
-#box1{
-    background-color: red;
+.container div.menu{
+    grid-area: menu;
 }
-#box2{
-    background-color: green;
+.container div.content{
+    grid-area: content;
 }
-#box3{
-    background-color: blue;
+.container div.footer{
+    grid-area: footer;
+    text-align: center;
 }
-#box4{
-    background-color: yellow;
-}
-body{
-    background-color: 333338;
-    color: ccccff;
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: 555555;
+    color: white;
 }
 .margin{
-    margin-left: 3vw;
-    margin-right: 3vw;
+    width: 90vw;
+    justify-self: center;
+}
+h2{
+    padding: 0;
+    margin: 0;
 }
