@@ -111,7 +111,7 @@
     }
 
 /* Game Button */
-    button.tablinks{
+    .tablinks{
         border: none;
         width: 100%;
         padding: 15px 32px;
@@ -124,10 +124,13 @@
         cursor: pointer;
         transition-duration: 0.4s;
     }
-    button.tablinks:hover{
+    .tablinks:hover{
         background-color: #0D2C75;
     }
-    button.tablinks:focus{
+    .active{
+        background-color: #0D2C75;
+    } 
+    .selected{
         background-color: #0D2C75;
     }
 

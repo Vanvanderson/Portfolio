@@ -1,6 +1,4 @@
-window.onload = function(){
-    openGame(event, 'LightKeeper')
-}
+
 function openGame(evt, gameName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,4 +11,4 @@ function openGame(evt, gameName) {
     }
     document.getElementById(gameName).style.display = "block";
     evt.currentTarget.className += " active";
-}
+} 
