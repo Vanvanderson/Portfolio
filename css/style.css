@@ -10,6 +10,7 @@
         font-family: "Jetbrains Mono";
         padding: 0;
         margin: 0;
+        border: 0;
         color: #9bafd9;
     }
     body{
@@ -37,7 +38,6 @@
         grid-area: menu;
     }
     .container div.content{
-        min-height: 85vh;
         margin-right: 0;
         border-radius: 0.5em;
         grid-area: content;
@@ -47,11 +47,19 @@
         text-align: center;
     }
 
-    /* Social Container */
+    /* Social */
     .socialContainer{
-        padding: 0.5em;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        padding: 0.25em;
         border-radius: 0 0.5em 0.5em 0;
         background-color: #0c1d5d;
+    }
+    .socialIcon{
+        height: 2em;
+        padding: 0.25em;
+        width: fit-content
     }
 
     /* Other */
@@ -62,10 +70,21 @@
         background-color: #22468E;
     }
     .gameContent{
-        min-height: 80vh;
         padding: 0.5em;
         border-radius: 0 0.5em 0.5em 0.5em;
         background-color: #22468E;
+        display: flex;
+        justify-content: center;
+    }
+    .gameImage{
+        border-radius: 0.5em;
+        border: 0.25em solid #0c1d5d;
+        width: 100%;
+        height: auto;
+    }
+    .gameImageContainer{
+        width: 50%;
+        padding: 0 0.5em 0 0.5em;
     }
     .menuBackground{
         display: grid;
@@ -79,8 +98,6 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        display: flex;
-        align-items: center;
     }
     .margin{
         width: 90vw;
@@ -104,7 +121,6 @@
         box-sizing: border-box;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
         cursor: pointer;
         transition-duration: 0.4s;
     }
@@ -133,8 +149,10 @@
     table, tr, td{
         padding-left: 0.5em;
     }
-    img.icon{
-        padding: 0;
-        margin: 0;
-        height: 2em;
+    img{
+        height: 100%;
+        object-fit: contain;
+    }
+    a{
+        min-width: 0;
     }
