@@ -1,27 +1,59 @@
 <html>
     <head>
         <link rel="stylesheet" href="/css/style.css">
+        <!-- Jetbrains -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     </head>
-    <div class="margin">
-        <div class="container">
-            <div class="header">
-                <h1>My header</h1>
-            </div>
-            <div class="menu">
-                <h3>Menu</h3>
-                <button>LightKeeper</button><br>
-                <button>Sweet Tooth</button><br>
-            </div>
-            <div class="content">
-                <h2>My content</h2>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quas doloribus officiis laboriosam temporibus fugiat voluptatibus reprehenderit expedita quasi autem aperiam, nisi ratione enim a, itaque tenetur non perspiciatis eveniet!
+    <body>
+        <div class="margin">
+            <div class="container">
+                <div class="header">
+                    <div style="width: fit-content; padding: 10px; border-radius: 10px; background-color: #5673AE;">
+                        <h1 style="color: dddddd;">Van Patton, Technical Artist</h1>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menuBackground">
+                        <h3>My Projects</h3>
+                        <div>
+                        <button class="tablinks" onclick="openGame(event, 'LightKeeper')">LightKeeper</button>
+                        </div>
+                        <div>
+                        <button class="tablinks" onclick="openGame(event, 'SweetTooth')">Sweet Tooth</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="LightKeeper" class="tabcontent">
+                        <div class="gameTitle">
+                            <h2>LightKeeper</h2>
+                        </div>
+                        <div class="gameContent">
+                            <p>
+                                LightKeeper is a game where you play as a omnipotent lighthouse keeper who guides boats safely to their destination. You control 3 lighthouses, guiding 3 differnt kinds of boats to their respective ports.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="SweetTooth" class="tabcontent">
+                        <div class="gameTitle">
+                            <h2>Sweet Tooth</h2>
+                        </div>
+                        <div class="gameContent">
+                            <p>Content for Sweet Tooth (placeholder)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </body>
     <div class="footer">
-        <h2>My socials:</h2>
-        <a href="https://www.youtube.com/@Vanvanderson">YouTube</a><br>
-        <a href="https://www.instagram.com/vanvanderson1/">Instagram</a><br>
-        <a href="https://www.linkedin.com/in/van-patton-615063213/">LinkedIn</a><br>
+        <div class="socialContainer">
+            <a href="https://www.youtube.com/@Vanvanderson" target="_blank"><img class="icon" alt="YouTube icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/330px-YouTube_full-color_icon_%282017%29.svg.png"></a>
+            <a href="https://www.linkedin.com/in/van-patton-615063213/" target="_blank"><img class="icon" alt="LinkedIn icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png" alt=""></a>
+            <a href="https://www.instagram.com/vanvanderson1/" target="_blank"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Icon"></a>
+        </div>
     </div>
+    <script src="scripts/mainscript.js"></script>
 </html>
