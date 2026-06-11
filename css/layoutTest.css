@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+.jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+*{
+    font-family: "JetBrains Mono";
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    border: 0;
+}
+body{
+    background-color: #001844;
+}
+.container{
+    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 15fr 1fr;
+    grid-template-areas: 
+    "header blank"
+    "menu content"
+    "footer footer";
+    height: 100vh;
+}
+.container div.header{
+    border: .25rem solid #001e55;
+    border-top: 0;
+    border-left: 0;
+    text-align: center;
+    border-radius: 0 0 1rem 0;
+    padding: 1rem;
+    background-color: darkblue;
+    grid-area: header;
+}
+.container div.menu{
+    border: .25rem solid #001e55;
+    border-left: 0;
+    border-radius: 0 1rem 1rem 0;
+    padding: 1rem;
+    background-color: darkblue;
+    grid-area: menu;
+}
+.container div.content{
+    border: .25rem solid #001e55;
+    border-right: 0;
+    border-radius: 1rem 0 0 1rem;
+    padding: 1rem;
+    background-color: darkblue;
+    grid-area: content;
+}
+.container div.footer{
+    border-top: .25rem solid #001e55;
+    padding: 1rem;
+    background-color: darkgray;
+    grid-area: footer;
+}
+.container div.blank{
+    grid-area: blank;
+}
