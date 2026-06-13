@@ -11,7 +11,7 @@
     padding: 0;
     gap: 0;
     border: 0;
-    color: #113755;
+    color: #52B69A;
 }
 body{
     background-color: #184E77;
@@ -29,14 +29,29 @@ body{
 }
 /*Header*/
     .container div.header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: .25rem solid #1E6091;
         border-top: 0;
         border-left: 0;
         text-align: center;
         border-radius: 0 0 1rem 0;
-        padding: 1rem;
         background-image: linear-gradient(to bottom, #1B5784, #184E77);
         grid-area: header;
+        position: sticky;
+        left: 0;
+        top: 0;
+    }
+    .container div.header img{
+        float: left;
+        border-radius: 50%;
+        height: 5rem;
+        padding: 1rem;
+    }
+    .container div.header h1{
+        padding: 1rem 1rem 1rem 0;
+        width: max-content;
     }
 /*Menu*/
     .container div.menu{
@@ -54,6 +69,7 @@ body{
         border-radius: 1rem;
         background-color: #99D98C;
         height: 3rem;
+        color: #113755;
     }
     button.menu:hover{
         background-color: #52B69A;
@@ -71,10 +87,19 @@ body{
         height: fit-content;
         grid-area: content;
     }
+    .container div.innercontent{
+        display: block;
+    }
+    .container img{
+        float: right;
+    }
+    .container p{
+        line-height: 2rem;
+    }
 /*Footer*/
     .container div.footer{
         color: #52B69A;
-        position: fixed;
+        position: sticky;
         width: 100%;
         left: 0;
         bottom: 0;
@@ -83,7 +108,7 @@ body{
         grid-area: footer;
     }
     .container div.footer h3{
-        color: #168AAD;
+        color: #52B69A;
     }
 .container div.blank{
     grid-area: blank;
