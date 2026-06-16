@@ -1,14 +1,13 @@
-
-function openGame(evt, gameName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+function openGame(evt, gameName){
+    var i, gamecontent, menubutton
+    gamecontent = document.getElementsByClassName("gamecontent");
+    for (i = 0; i < gamecontent.length; i++) {
+        gamecontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    menubutton = document.getElementsByClassName("menubutton");
+    for (i = 0; i < menubutton.length; i++) {
+        menubutton[i].className = menubutton[i].className.replace(" active", "");
     }
     document.getElementById(gameName).style.display = "block";
     evt.currentTarget.className += " active";
-} 
+}

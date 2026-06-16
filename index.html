@@ -1,77 +1,35 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="https://yt3.googleusercontent.com/ytc/AIdro_ke0b0iqNy9_ZcWC3FMHo3mZ25VhlwV3y5z2xP7I5Vo44Y=s900-c-k-c0x00ffffff-no-rj">
-        <title>Van's Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta title="Van's Portfolio">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="margin">
-            <div class="container">
-                <div class="header">
-                    Van Patton, Technical Artist <a href="pages/layoutTest.html">Test</a>
+        <div class="container">
+            <div class="header">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_ke0b0iqNy9_ZcWC3FMHo3mZ25VhlwV3y5z2xP7I5Vo44Y=s160-c-k-c0x00ffffff-no-rj" alt="">
+                <h1>Van Patton's Portfolio</h1>
+            </div>
+            <div class="menu">
+                <h2>My Projects</h2>
+                <button class="menubutton active" onclick="openGame(event, 'Lightkeeper')">LightKeeper</button>
+                <button class="menubutton" onclick="openGame(event, 'Sweettooth')">Sweet Tooth</button>
+            </div>
+            <div class="content">
+                <div id="Lightkeeper" class="gamecontent" style="display: block;">
+                    <h2>Lightkeeper</h2>
+                    <a href="https://vanvanderson.itch.io/lightkeeper" target="_blank"><img src="https://img.itch.zone/aW1nLzI2ODEwNzg0LnBuZw==/315x250%23c/gm7NXl.png" alt="Lightkeeper image"></a>
+                    <p>Lightkeeper is a game. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quos dolor repudiandae, consequatur eum error numquam similique nam, quasi enim in cumque eligendi fugit? Ad consequuntur sunt minima repellendus nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quaerat sequi ipsam assumenda perspiciatis porro hic laborum dolorem reiciendis. Similique itaque provident exercitationem necessitatibus hic. Corporis, dolorem. Inventore, officiis nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus error similique explicabo. Ex molestias est, voluptatibus dolorem excepturi quasi ducimus. Velit illum dicta numquam explicabo magni possimus sit vitae ipsam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni neque minima nihil consectetur, vel beatae corporis, eveniet aut quaerat provident voluptate adipisci nemo excepturi animi saepe amet non magnam id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis aspernatur itaque at sit quo laudantium, officia consectetur, temporibus nesciunt omnis fugit impedit cumque incidunt esse nisi tempora magnam, quibusdam totam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit magnam fugiat dicta. Doloribus rerum ex quo vel, cumque praesentium, nostrum accusantium quisquam soluta esse necessitatibus deleniti, officiis veritatis velit quia.</p>
                 </div>
-                <div class="menu">
-                    <div class="menuBackground">
-                        <h3>My Projects</h3>
-                        <div>
-                        <button class="tablinks active" onclick="openGame(event, 'LightKeeper')">LightKeeper</button>
-                        </div>
-                        <div>
-                        <button class="tablinks" onclick="openGame(event, 'SweetTooth')">Sweet Tooth</button>
-                        </div>
-                        <div>
-                        <button class="tablinks" onclick="openGame(event, 'Test')">Test</button>
-                        </div>
-                    </div>
+                <div id="Sweettooth" class="gamecontent">
+                    <h2>Sweet Tooth</h2>
+                    <p>Sweet Tooth is a game</p>
                 </div>
-                <div class="content">
-                    <div id="LightKeeper" class="tabcontent" style="display: block;">
-                        <div class="gameTitle">
-                            <h2>LightKeeper</h2>
-                        </div>
-                        <div class="gameContent">
-                            <p style="width: 50%; text-align: center;">
-                                LightKeeper is a game where you play as a omnipotent lighthouse keeper who guides boats safely to their destination. You control 3 lighthouses, guiding 3 differnt kinds of boats to their respective ports.
-                            </p>
-                            <div class="gameImageContainer">
-                            <a href="https://vanvanderson.itch.io/lightkeeper" target="_blank"><img class="gameImage" src="https://img.itch.zone/aW1nLzI2ODEwNzg0LnBuZw==/315x250%23c/gm7NXl.png" alt=""></a>
-                            <p style="text-align: center; padding-top: 0.5em;">Click the image above to check it out!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="SweetTooth" class="tabcontent">
-                        <div class="gameTitle">
-                            <h2>Sweet Tooth</h2>
-                        </div>
-                        <div class="gameContent">
-                            <p>Content for Sweet Tooth (placeholder)</p>
-                        </div>
-                    </div>
-                    <div id="Test" class="tabcontent">
-                        <div class="gameTitle">
-                            <h2>Test</h2>
-                        </div>
-                        <div class="gameContent">
-                            <p>Test</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="footer">
+                <h3>Footer</h3>
             </div>
         </div>
     </body>
-    <div class="footer">
-        <div class="socialContainer">
-            <div class="socialIcon">
-                <a href="https://www.youtube.com/@Vanvanderson" target="_blank"><img alt="YouTube icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/330px-YouTube_full-color_icon_%282017%29.svg.png"></a>
-            </div>
-            <div class="socialIcon">
-                <a href="https://www.linkedin.com/in/van-patton-615063213/" target="_blank"><img alt="LinkedIn icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png" alt=""></a>
-            </div>
-            <div class="socialIcon">
-                <a href="https://www.instagram.com/vanvanderson1/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Icon"></a>
-            </div>
-        </div>
-    </div>
     <script src="scripts/mainscript.js"></script>
 </html>
